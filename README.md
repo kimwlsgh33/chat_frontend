@@ -1,17 +1,37 @@
 # chat_frontend
 
-A new Flutter project.
+Spring + Flutter
 
-## Getting Started
+## Architecture
 
-This project is a starting point for a Flutter application.
+### src
+모든 소스 파일
 
-A few resources to get you started if this is your first Flutter project:
+### base
+상수, 유틸
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+### config
+시스템 설정,테마 , 라우팅
+
+### data
+- sources/local
+  * 사용자 기기에서 불러오는 데이터
+- sources/remote
+  * API 에서 불러오는 데이터
+
+### model
+- entities
+  * 객체 및 클래스 (DENTITY - B테이블과1대일 대응)
+- repository
+  * DB 접근하는 로직 (DAO)
+
+### presenter (View)
+- blocs
+- responsive
+- views
+  * 화면
+
+
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# chat_frontend
